@@ -16,6 +16,7 @@
 
   <PropertyGroup>
     <RootNamespace>MongoDB.Driver</RootNamespace>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>

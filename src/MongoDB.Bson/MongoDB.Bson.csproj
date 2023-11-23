@@ -12,6 +12,7 @@
     <PackageDescription>MongoDB's Official Bson Library.</PackageDescription>
     <PackageTags>$(PackageTags);bson</PackageTags>
     <IsPackable>true</IsPackable>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>

@@ -222,27 +222,7 @@ namespace MongoDB.Driver.Core.Connections
                 }
 
                 osName = Environment.OSVersion.VersionString;
-
-                PortableExecutableKinds peKind;
-                ImageFileMachine machine;
-                typeof(object).Module.GetPEKind(out peKind, out machine);
-                switch (machine)
-                {
-                    case ImageFileMachine.I386:
-                        architecture = "x86_32";
-                        break;
-                    case ImageFileMachine.IA64:
-                    case ImageFileMachine.AMD64:
-                        architecture = "x86_64";
-                        break;
-                    case ImageFileMachine.ARM:
-                        architecture = "arm" + (Environment.Is64BitProcess ? "64" : "");
-                        break;
-                    default:
-                        architecture = null;
-                        break;
-                }
-
+                architecture = "arm" + (Environment.Is64BitProcess ? "64" : "");
                 osVersion = Environment.OSVersion.Version.ToString();
 
                 return CreateOSDocument(osType, osName, architecture, osVersion);

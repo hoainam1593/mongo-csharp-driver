@@ -12,6 +12,7 @@
     <PackageDescription>GridFS Component of the Official MongoDB .NET Driver.</PackageDescription>
     <PackageTags>$(PackageTags);gridfs</PackageTags>
     <IsPackable>true</IsPackable>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
